@@ -1,0 +1,9 @@
+c:\users\administrator\documents\visual studio 2012\Projects\EmployeeEntityModel\EmployeeEntityModel\bin\Debug\EmployeeEntityModel.dll
+c:\users\administrator\documents\visual studio 2012\Projects\EmployeeEntityModel\EmployeeEntityModel\bin\Debug\EmployeeEntityModel.pdb
+c:\users\administrator\documents\visual studio 2012\Projects\EmployeeEntityModel\EmployeeEntityModel\obj\Debug\EmployeeEntityModel.csprojResolveAssemblyReference.cache
+c:\users\administrator\documents\visual studio 2012\Projects\EmployeeEntityModel\EmployeeEntityModel\obj\Debug\EmployeeEntityModel.dll
+c:\users\administrator\documents\visual studio 2012\Projects\EmployeeEntityModel\EmployeeEntityModel\obj\Debug\EmployeeEntityModel.pdb
+C:\Users\Administrator\Documents\Visual Studio 2012\Projects\New folder\EmployeeEntityModel\EmployeeEntityModel\bin\Debug\EmployeeEntityModel.dll
+C:\Users\Administrator\Documents\Visual Studio 2012\Projects\New folder\EmployeeEntityModel\EmployeeEntityModel\bin\Debug\EmployeeEntityModel.pdb
+C:\Users\Administrator\Documents\Visual Studio 2012\Projects\New folder\EmployeeEntityModel\EmployeeEntityModel\obj\Debug\EmployeeEntityModel.dll
+C:\Users\Administrator\Documents\Visual Studio 2012\Projects\New folder\EmployeeEntityModel\EmployeeEntityModel\obj\Debug\EmployeeEntityModel.pdb

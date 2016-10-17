@@ -1,0 +1,6 @@
+c:\users\administrator\documents\visual studio 2012\Projects\BCSRunTime\BCSRunTime\bin\Debug\BCSRunTime.exe.config
+c:\users\administrator\documents\visual studio 2012\Projects\BCSRunTime\BCSRunTime\bin\Debug\BCSRunTime.exe
+c:\users\administrator\documents\visual studio 2012\Projects\BCSRunTime\BCSRunTime\bin\Debug\BCSRunTime.pdb
+c:\users\administrator\documents\visual studio 2012\Projects\BCSRunTime\BCSRunTime\obj\Debug\BCSRunTime.csprojResolveAssemblyReference.cache
+c:\users\administrator\documents\visual studio 2012\Projects\BCSRunTime\BCSRunTime\obj\Debug\BCSRunTime.exe
+c:\users\administrator\documents\visual studio 2012\Projects\BCSRunTime\BCSRunTime\obj\Debug\BCSRunTime.pdb

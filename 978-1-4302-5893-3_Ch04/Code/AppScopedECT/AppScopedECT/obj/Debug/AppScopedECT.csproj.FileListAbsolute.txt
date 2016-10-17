@@ -1,0 +1,3 @@
+c:\users\administrator\documents\visual studio 2012\Projects\AppScopedECT\AppScopedECT\bin\Debug\AppScopedECT.pdb
+c:\users\administrator\documents\visual studio 2012\Projects\AppScopedECT\AppScopedECT\obj\Debug\AppScopedECT.dll
+c:\users\administrator\documents\visual studio 2012\Projects\AppScopedECT\AppScopedECT\obj\Debug\AppScopedECT.pdb

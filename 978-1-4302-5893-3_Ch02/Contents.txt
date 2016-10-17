@@ -1,0 +1,25 @@
+Airport
+1. Airport Flight Stats List template (with data)
+2. Airport(BasicDiagram).vsdx (Without data connections)
+3. Airport.vsdx
+
+Landmark
+1. assets.js (script for javascript mashup-api to display description)
+2. Mall.vsdx
+
+TastyFoodsFeedBack
+1. TastyFoodsFeedBack.vsdx (diagram)
+2. Tasty Foods Feedback List template (with data)
+
+Story Board
+1. StoryBoard.vsd (diagram)
+
+CustomDataProvider
+1. TestServers.vsdx (diagram)
+2. TestServersVBACode.txt (VBA Code to generate external data source)
+3. VisioCustomDataProviderServices (custom data provider class)
+4. WcfDataService 
+  a. WcfDataProvider  (wcf data service)
+  b. WcfDataProviderTest (test project to test wcf data service)
+
+VisioServices.bak (database backup)

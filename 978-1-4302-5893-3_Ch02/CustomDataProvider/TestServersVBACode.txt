@@ -1,0 +1,23 @@
+Sub LoadData()
+
+    Dim diagramServices As Integer
+    Dim vsoDataRecordset As Visio.dataRecordset
+    Dim dataRecordset As Visio.dataRecordset
+    
+    Dim connectionString As String
+    Dim commandText As String
+   
+    diagramServices = ActiveDocument.DiagramServicesEnabled
+    ActiveDocument.DiagramServicesEnabled = visServiceVersion140
+    Application.ActiveWindow.Windows.ItemFromID(visWinIDExternalData).Visible = True
+      
+    commandText = "SELECT * FROM tblServerStatus"
+    connectionString = "Provider=SQLOLEDB;Data Source=localhost;Initial Catalog=VisioServices;Integrated Security=SSPI;"
+
+    Set vsoDataRecordset = ActiveDocument.DataRecordsets.Add(connectionString, commandText, 0, "Server Status Details")
+    vsoDataRecordset.CommandString = "DataModule=DataModules.VisioDataProviderService,VisioDataProviderService;"
+    
+    ActiveDocument.DiagramServicesEnabled = diagramServices
+
+End Sub
+

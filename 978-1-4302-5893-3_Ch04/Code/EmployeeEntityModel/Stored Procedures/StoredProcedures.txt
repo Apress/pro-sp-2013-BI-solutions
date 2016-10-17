@@ -1,0 +1,76 @@
+USE [AdventureWorks2012]
+GO
+
+CREATE PROCEDURE [dbo].[uspGetEmployees] 	
+AS
+BEGIN
+	SET NOCOUNT ON;
+	SELECT BusinessEntityID, NationalIDNumber, LoginID, JobTitle, BirthDate, MaritalStatus, 
+	Gender, HireDate, SalariedFlag, VacationHours, SickLeaveHours, CurrentFlag, ModifiedDate
+	FROM
+	HumanResources.Employee
+	WHERE OrganizationNode.GetAncestor(1) IS NOT NULL
+END
+
+GO
+
+
+
+USE [AdventureWorks2012]
+GO
+
+CREATE PROCEDURE [dbo].[uspGetEmployeesById]
+@BusinessEntityID [int]
+AS
+BEGIN
+	SET NOCOUNT ON;
+	SELECT BusinessEntityID, NationalIDNumber, LoginID, JobTitle, BirthDate, MaritalStatus, 
+	Gender, HireDate, SalariedFlag, VacationHours, SickLeaveHours, CurrentFlag, ModifiedDate
+	FROM
+	HumanResources.Employee
+	WHERE
+	BusinessEntityID = @BusinessEntityID
+	
+END
+
+GO
+
+
+USE [AdventureWorks2012]
+GO
+
+CREATE PROCEDURE [dbo].[uspSetEmployeesValueById]
+@BusinessEntityID [int],
+@NationalIDNumber nvarchar(15), 
+@LoginID nvarchar(256), 
+@JobTitle nvarchar(50),
+@BirthDate DateTime,
+@MaritalStatus nchar(1), 
+@Gender nchar(1), 
+@HireDate DateTime, 
+@SalariedFlag bit, 
+@VacationHours smallint, 
+@SickLeaveHours smallint, 
+@CurrentFlag bit, 
+@ModifiedDate DateTime 	
+AS
+BEGIN
+	
+	UPDATE HumanResources.Employee
+	Set NationalIDNumber = @NationalIDNumber, 		
+		LoginID = @LoginID, 		
+		JobTitle = @JobTitle,
+		BirthDate = @BirthDate,
+		MaritalStatus = @MaritalStatus, 
+		Gender = @Gender, 
+		HireDate = @HireDate, 
+		SalariedFlag = @SalariedFlag, 
+		VacationHours = @VacationHours, 
+		SickLeaveHours = @SickLeaveHours, 
+		CurrentFlag = @CurrentFlag, 
+		ModifiedDate = @ModifiedDate	
+	WHERE
+		BusinessEntityID = @BusinessEntityID
+END
+
+GO

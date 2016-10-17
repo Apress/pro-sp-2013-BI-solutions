@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package dslVersion="1.0.0.0" 
+        Id="aa1af0dc-18ac-406e-b896-68fe01af9286" 
+        solutionId="aa1af0dc-18ac-406e-b896-68fe01af9286" 
+        xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" 
+        name="VisioDataService"
+        sharePointProductVersion="15.0">
+</package>

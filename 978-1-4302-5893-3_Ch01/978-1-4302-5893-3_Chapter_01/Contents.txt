@@ -1,0 +1,8 @@
+Example 1# Prod_SSIS_Proj - SSIS Export data to File example
+
+Example 2# AW Sales Data Project - SSAS example
+
+Scripts:
+    salesquery - Query to retrieve data in example 1 from Adventure works database
+    Sales_SSIS_Report - Exported file from example 1 (Prod_SSIS_Proj)
+    AWSalesTables - TSQL Script to create the tables needed in Example 2

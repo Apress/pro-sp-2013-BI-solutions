@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Id="c131aab0-cea8-4a9e-a88f-5734391255df" ReceiverAssembly="Microsoft.Office.SharePoint.ClientExtensions, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" ReceiverClass="Microsoft.Office.SharePoint.ClientExtensions.Deployment.ImportModelReceiver" Scope="Farm" Title="EmployeeEntityModel Feature1">
+  <ElementManifests>
+    <ElementFile Location="BdcModel1\BdcModel1.bdcm" />
+    <ElementFile Location="BdcAssemblies\EmployeeEntityModel.dll" />
+  </ElementManifests>
+  <Properties>
+    <Property Key="BdcModel1" Value="BdcAssemblies\EmployeeEntityModel.dll" />
+    <Property Key="IncrementalUpdate" Value="true" />
+    <Property Key="ModelFileName" Value="BdcModel1\BdcModel1.bdcm" />
+  </Properties>
+</Feature>

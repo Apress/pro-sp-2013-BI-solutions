@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/windows/2007/BusinessDataCatalog" Name="BdcModel1">
+  <LobSystems>
+    <LobSystem Name="BdcModel1" Type="DotNetAssembly">
+      <LobSystemInstances>
+        <LobSystemInstance Name="BdcModel1" />
+      </LobSystemInstances>
+      <Entities>
+        <Entity Name="Entity1" Namespace="EmployeeEntityModel.BdcModel1" EstimatedInstanceCount="1000" Version="1.0.0.55">
+          <Properties>
+            <Property Name="Class" Type="System.String">EmployeeEntityModel.BdcModel1.Entity1Service, BdcModel1</Property>
+          </Properties>
+          <Identifiers>
+            <Identifier Name="Identifier1" TypeName="System.Int32" />
+            <!-- TODO: Change the name of the ID and if needed the TypeName of your identifier. -->
+          </Identifiers>
+          <Methods>
+            <!-- start finder method -->
+            <Method Name="ReadList">
+              <!-- TODO: Change the name of the method if needed. -->
+              <Parameters>
+                <Parameter Direction="Return" Name="returnParameter">
+                  <TypeDescriptor TypeName="System.Collections.Generic.IEnumerable`1[[EmployeeEntityModel.BdcModel1.Entity1, BdcModel1]]" IsCollection="true" Name="Entity1List">
+                    <TypeDescriptors>
+                      <TypeDescriptor Name="Entity1" TypeName="EmployeeEntityModel.BdcModel1.Entity1, BdcModel1">
+                        <TypeDescriptors>
+                          <TypeDescriptor Name="BusinessEntityID" TypeName="System.Int32" IdentifierName="Identifier1" />
+                          <TypeDescriptor Name="NationalIDNumber" TypeName="System.String" />
+                          <TypeDescriptor Name="LoginID" TypeName="System.String" />
+                          <TypeDescriptor Name="JobTitle" TypeName="System.String" />
+                          <TypeDescriptor Name="BirthDate" TypeName="System.DateTime" IsCollection="false" />
+                          <TypeDescriptor Name="MaritalStatus" TypeName="System.Char" IsCollection="false" />
+                          <TypeDescriptor Name="Gender" TypeName="System.Char" IsCollection="false" />
+                          <TypeDescriptor Name="HireDate" TypeName="System.DateTime" IsCollection="false" />
+                          <TypeDescriptor Name="SalariedFlag" TypeName="System.Boolean" IsCollection="false" />
+                          <TypeDescriptor Name="VacationHours" TypeName="System.Int16" IsCollection="false" />
+                          <TypeDescriptor Name="SickLeaveHours" TypeName="System.Int16" IsCollection="false" />
+                          <TypeDescriptor Name="CurrentFlag" TypeName="System.Boolean" IsCollection="false" />
+                          <TypeDescriptor Name="ModifiedDate" TypeName="System.DateTime" IsCollection="false" /></TypeDescriptors></TypeDescriptor></TypeDescriptors>
+                  </TypeDescriptor>
+                </Parameter>
+              </Parameters>
+              <MethodInstances>
+                <MethodInstance Type="Finder" ReturnParameterName="returnParameter" Default="true" Name="ReadList" DefaultDisplayName="Entity1 List" />
+              </MethodInstances>
+            </Method>
+            <!-- end finder method -->
+            <!-- start specific finder method -->
+            <Method Name="ReadItem">
+              <Parameters>
+                <Parameter Direction="In" Name="id">
+                  <TypeDescriptor TypeName="System.Int32" IdentifierName="Identifier1" Name="Identifier1" />
+                </Parameter>
+                <Parameter Direction="Return" Name="returnParameter">
+                  <TypeDescriptor TypeName="EmployeeEntityModel.BdcModel1.Entity1, BdcModel1" Name="Entity1">
+                    <TypeDescriptors>
+                      <TypeDescriptor TypeName="System.Int32" IdentifierName="Identifier1" Name="BusinessEntityID" />
+                      <!-- TODO: Add TypeDescriptors when you add properties to Entity1. -->
+                      <TypeDescriptor Name="NationalIDNumber" TypeName="System.String" />
+                      <TypeDescriptor Name="LoginID" TypeName="System.String" />
+                      <TypeDescriptor Name="JobTitle" TypeName="System.String" />
+                      <TypeDescriptor Name="BirthDate" TypeName="System.DateTime" IsCollection="false" />
+                      <TypeDescriptor Name="MaritalStatus" TypeName="System.Char" IsCollection="false" />
+                      <TypeDescriptor Name="Gender" TypeName="System.Char" IsCollection="false" />
+                      <TypeDescriptor Name="HireDate" TypeName="System.DateTime" IsCollection="false" />
+                      <TypeDescriptor Name="SalariedFlag" TypeName="System.Boolean" IsCollection="false" />
+                      <TypeDescriptor Name="VacationHours" TypeName="System.Int16" IsCollection="false" />
+                      <TypeDescriptor Name="SickLeaveHours" TypeName="System.Int16" IsCollection="false" />
+                      <TypeDescriptor Name="CurrentFlag" TypeName="System.Boolean" IsCollection="false" />
+                      <TypeDescriptor Name="ModifiedDate" TypeName="System.DateTime" IsCollection="false" /></TypeDescriptors>
+                  </TypeDescriptor>
+                </Parameter>
+              </Parameters>
+              <MethodInstances>
+                <MethodInstance Type="SpecificFinder" ReturnParameterName="returnParameter" Default="true" Name="ReadItem" DefaultDisplayName="Read Entity1" />
+              </MethodInstances>
+            </Method>
+            <Method Name="Update">
+              <Parameters>
+                <Parameter Name="entity1" Direction="In">
+                  <TypeDescriptor Name="Entity1" TypeName="EmployeeEntityModel.BdcModel1.Entity1, BdcModel1">
+                    <TypeDescriptors>
+                      <TypeDescriptor Name="BusinessEntityID" IdentifierName="Identifier1" TypeName="System.Int32" UpdaterField="true" />
+                      <TypeDescriptor Name="NationalIDNumber" TypeName="System.String" UpdaterField="true" />
+                      <TypeDescriptor Name="LoginID" TypeName="System.String" UpdaterField="true" />
+                      <TypeDescriptor Name="JobTitle" TypeName="System.String" UpdaterField="true" />
+                      <TypeDescriptor Name="BirthDate" IsCollection="false" TypeName="System.DateTime" UpdaterField="true" />
+                      <TypeDescriptor Name="MaritalStatus" IsCollection="false" TypeName="System.Char" UpdaterField="true" />
+                      <TypeDescriptor Name="Gender" IsCollection="false" TypeName="System.Char" UpdaterField="true" />
+                      <TypeDescriptor Name="HireDate" IsCollection="false" TypeName="System.DateTime" UpdaterField="true" />
+                      <TypeDescriptor Name="SalariedFlag" IsCollection="false" TypeName="System.Boolean" UpdaterField="true" />
+                      <TypeDescriptor Name="VacationHours" IsCollection="false" TypeName="System.Int16" UpdaterField="true" />
+                      <TypeDescriptor Name="SickLeaveHours" IsCollection="false" TypeName="System.Int16" UpdaterField="true" />
+                      <TypeDescriptor Name="CurrentFlag" IsCollection="false" TypeName="System.Boolean" UpdaterField="true" />
+                      <TypeDescriptor Name="ModifiedDate" IsCollection="false" TypeName="System.DateTime" UpdaterField="true" /></TypeDescriptors></TypeDescriptor></Parameter>
+                <Parameter Name="parameter" Direction="In">
+                  <TypeDescriptor Name="BusinessEntityID" TypeName="System.Int32" IsCollection="false" PreUpdaterField="true" IdentifierName="Identifier1" /></Parameter>
+              </Parameters>
+              <MethodInstances>
+                <MethodInstance Name="Update" Type="Updater" />
+              </MethodInstances></Method>
+            <!-- end specific finder method -->
+          </Methods>
+        </Entity>
+      </Entities>
+    </LobSystem>
+  </LobSystems>
+</Model>

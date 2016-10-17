@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="ee4f9f98-864a-4f7a-b0a4-d041dfc894a5" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8181/VisioWcfServices.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="VisioWcfServices.xsd" MetadataType="Schema" ID="40946cd7-0464-4390-be2e-d09b89fb9843" SourceId="1" SourceUrl="http://bimain.bilearn.com:8181/VisioWcfServices.svc?xsd=xsd2" />
+    <MetadataFile FileName="VisioWcfServices1.xsd" MetadataType="Schema" ID="1dce1b45-0dee-49a5-8139-789c7388c0a2" SourceId="1" SourceUrl="http://bimain.bilearn.com:8181/VisioWcfServices.svc?xsd=xsd1" />
+    <MetadataFile FileName="VisioWcfServices2.xsd" MetadataType="Schema" ID="1f88fc67-8cbe-4ab4-9796-1340c455d8cc" SourceId="1" SourceUrl="http://bimain.bilearn.com:8181/VisioWcfServices.svc?xsd=xsd0" />
+    <MetadataFile FileName="VisioWcfServices.disco" MetadataType="Disco" ID="72213d75-57ab-461a-a296-4316af86a89f" SourceId="1" SourceUrl="http://bimain.bilearn.com:8181/VisioWcfServices.svc?disco" />
+    <MetadataFile FileName="ServerStatus.wsdl" MetadataType="Wsdl" ID="fcd69b5d-d8ef-4dbe-8a97-e85dcf3eec4b" SourceId="1" SourceUrl="http://bimain.bilearn.com:8181/VisioWcfServices.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

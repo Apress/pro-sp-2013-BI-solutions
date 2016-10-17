@@ -1,0 +1,45 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="68852c30-72b1-48b2-bcc3-f195587babe9" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>AW Sales Data View</ID>
+  <MeasureGroups>
+    <MeasureGroup>
+      <ID>Fact Sales Order Details</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="7a15bb7f-ad3c-4899-8fa7-c417c8a376bf">
+          <ID>Fact Sales Order Details</ID>
+          <Name>Fact Sales Order Details</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="d2449582-6c08-4697-a5ab-7e193bc77ab6">
+            <DataSourceViewID>AW Sales Data View</DataSourceViewID>
+            <TableID>dbo_Fact_SalesOrderDetails</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Dim Sales Territory</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="7e6716be-979a-4e62-9016-715609714134">
+          <ID>Dim Sales Territory</ID>
+          <Name>Dim Sales Territory</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="9e2d9e40-9679-4315-9010-d9d68c2b5d02">
+            <DataSourceViewID>AW Sales Data View</DataSourceViewID>
+            <TableID>dbo_Dim_SalesTerritory</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+  </MeasureGroups>
+</Cube>
